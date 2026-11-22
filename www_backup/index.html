@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1769e8"><title>A Pay</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="brand"><span class="logo">A</span><div><b>A Pay</b><small>Simple. Secure. Smart.</small></div></div><button class="avatar" aria-label="Profile">A</button></header>
+<main>
+<section class="balance">
+  <div class="balance-head"><span>Demo Wallet Balance</span><span class="pill">DEMO</span></div>
+  <div class="amount" id="balance">₹ 2,500.00</div>
+  <div class="balance-foot">This is sample money, not real funds.</div>
+  <div class="balance-actions"><button class="white-btn" id="add">＋ Add demo money</button><button class="glass-btn" id="historyJump">History ↓</button></div>
+</section>
+<section class="quick">
+<h2>Quick actions</h2><div class="action-grid">
+<button class="action" id="send"><span class="action-icon">↗</span><b>Send</b><small>Demo transfer</small></button>
+<button class="action" id="receive"><span class="action-icon">▦</span><b>Receive</b><small>Show demo QR</small></button>
+<button class="action" id="mobile"><span class="action-icon">▤</span><b>Mobile</b><small>Recharge demo</small></button>
+<button class="action" id="bills"><span class="action-icon">▣</span><b>Bills</b><small>Coming soon</small></button>
+</div></section>
+<section class="promo"><div><b>Welcome to A Pay</b><p>Explore your wallet with safe demo transactions.</p></div><span>✦</span></section>
+<section class="history" id="history"><div class="section-head"><h2>Recent transactions</h2><button id="clear">Clear</button></div><div id="transactions" class="transactions"><div class="empty">No transactions yet. Try a demo action.</div></div></section>
+</main>
+<nav class="bottom"><button class="active">⌂<small>Home</small></button><button id="navHistory">↻<small>History</small></button><button id="navProfile">◉<small>Profile</small></button></nav>
+<div class="modal hidden" id="modal"><div class="sheet"><button class="close" id="close">×</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body></html>
